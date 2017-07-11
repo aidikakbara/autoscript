@@ -276,28 +276,6 @@ cd
 service exim4 stop
 sysv-rc-conf exim4 off
 
-#instal script shortcut
-cd /usr/bin
-wget -O user-new "https://raw.githubusercontent.com/AidikaAA/autoinstaller/master/new.sh"
-wget -O trial "https://raw.githubusercontent.com/AidikaAA/autoinstaller/master/trial.sh"
-wget -O renew "https://raw.githubusercontent.com/AidikaAA/autoinstaller/master/renew.sh"
-wget -O user-list "https://raw.githubusercontent.com/AidikaAA/autoinstaller/master/userlist.sh"
-wget -O user-del "https://raw.githubusercontent.com/AidikaAA/autoinstaller/master/userdel.sh"
-wget -O user-log "https://raw.githubusercontent.com/AidikaAA/autoinstaller/master/user-login.sh"
-wget -O benchmark "https://raw.githubusercontent.com/AidikaAA/autoinstaller/master/benchmark.sh"
-wget -O user-active "https://raw.githubusercontent.com/AidikaAA/autoinstaller/master/user1.sh"
-wget -O user-exp "https://raw.githubusercontent.com/AidikaAA/autoinstaller/master/user2.sh"
-wget -O cek-mem "https://raw.githubusercontent.com/AidikaAA/autoinstaller/master/cek-mem.sh"
-chmod +x usernew
-chmod +x trial
-chmod +x renew
-chmod +x user-list
-chmod +x user-del
-chmod +x userlog
-chmod +x user-active
-chmod +x user-exp
-chmod +x benchmark
-
 rm -rf /etc/cron.weekly/
 rm -rf /etc/cron.hourly/
 rm -rf /etc/cron.monthly/
