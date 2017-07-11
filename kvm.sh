@@ -1,22 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Marketplace
-Gist
- @AidikaAA
- Sign out
- Watch 0
-  Star 0
-  Fork 0 AidikaAA/autovps
- Code  Issues 0  Pull requests 0  Projects 1  Wiki  Settings Insights 
-Branch: master Find file Copy pathautovps/installerKVM.sh
-4664140  3 days ago
-@AidikaAA AidikaAA Update installerKVM.sh
-1 contributor
-RawBlameHistory     
-323 lines (282 sloc)  10.5 KB
 #!/bin/bash
 myip=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0' | head -n1`;
 myint=`ifconfig | grep -B1 "inet addr:$myip" | head -n1 | awk '{print $1}'`;
